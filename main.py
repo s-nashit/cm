@@ -10,3 +10,12 @@ df = pd.read_csv('assignment.csv')
 pyg_app = StreamlitRenderer(df)
 pyg_app.explorer() 
 
+hide_menu = """
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
+header {visibility: hidden;}
+</style>
+"""
+st.markdown(hide_menu, unsafe_allow_html=True)
+
